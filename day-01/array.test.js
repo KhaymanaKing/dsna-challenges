@@ -26,4 +26,14 @@ test("array unshift", () => {
     expect(newLength).toBe(4);
 }); 
 
+function pop(arr) {
+    const x = arr.length = arr.length - 1
+    return x;
+}
 
+test("array pop", () => {
+    const arr = ['a', 'b', 'c'];
+    const newLength = pop(arr);
+    expect(arr).toEqual(['a', 'b'])
+    expect(newLength).toBe(2);
+}); 
