@@ -4,7 +4,7 @@ function push(arr, item) {
 }
 
 function unshift(arr, item) {
-    
+   arr[]
 }
 
 test("array push", () => {
