@@ -13,11 +13,12 @@ test('multiplesOfN', () => {
 })
 
 function reverseWords(sentence) {
-//split up the sentence into its each individual letters
-//push each letter into a new array
-//reverse the array
-//rejoin the array 
-//
+ return sentence
+ .split(" ")
+ .map((word) => {
+    return word.split("").reverse().join("");
+ })
+ .join(" ");
 }
 
 test('reverseWords', () => {
