@@ -26,9 +26,22 @@ test('reverseWords', () => {
 })
 
 function titleCase(sentence) { 
-
+return sentence.split(' ')
+.map(word => {
+    return word[0].toUpperCase() + word.slice(1).toLowerCase()
+})
+.join(' ');
 }
 
 test('titleCase', () => {
     expect(titleCase('alchemy ROCKS goLD')).toEqual('Alchemy Rocks Gold')
 })
+
+// function oddishOrEvenish(number) {
+
+// }
+
+// test('oddishOrEvenish', () => {
+//     expect(oddishOrEvenish(121)).toEqual('Evenish')
+//     expect(oddishOrEvenish(41)).toBe('Oddish')
+// })
