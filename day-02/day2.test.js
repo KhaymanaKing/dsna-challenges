@@ -67,7 +67,6 @@ function addPunctuation (element){
     return function addItem(string) {
         return string + element;
     }
-   
 }
 
 test('adds punctuation', () => {
@@ -75,4 +74,16 @@ test('adds punctuation', () => {
     const addUnsure = addPunctuation('?!?');
     expect(addUnsure('Hello World')).toBe('Hello World?!?');
     expect(addExcitement('Hello World')).toBe('Hello World!!!')
+})
+
+function fib(n) {  
+    if (n <= 1) return 1;
+
+    return fib(n - 1) + fib(n - 2);
+}
+
+test('fibonacci test', () => { 
+    // expect(fib(0)).toEqual(0);
+    expect(fib(2)).toEqual(2);
+    expect(fib(8)).toEqual(34);
 })
