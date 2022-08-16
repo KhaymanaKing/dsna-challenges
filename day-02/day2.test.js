@@ -83,7 +83,7 @@ function fib(n) {
 }
 
 test('fibonacci test', () => { 
-    // expect(fib(0)).toEqual(0);
+    expect(fib(0)).toEqual(1);
     expect(fib(2)).toEqual(2);
     expect(fib(8)).toEqual(34);
 })
