@@ -23,5 +23,12 @@ function reverseWords(sentence) {
 
 test('reverseWords', () => {
     expect(reverseWords('alchemy rocks gold')).toEqual('ymehcla skcor dlog');
+})
 
+function titleCase(sentence) { 
+
+}
+
+test('titleCase', () => {
+    expect(titleCase('alchemy ROCKS goLD')).toEqual('Alchemy Rocks Gold')
 })
