@@ -1,0 +1,26 @@
+{
+  "name": "dsna-challenges",
+  "description": "Repository for code challenges",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "jest --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KhaymanaKing/dsna-challenges.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KhaymanaKing/dsna-challenges/issues"
+  },
+  "homepage": "https://github.com/KhaymanaKing/dsna-challenges#readme",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  },
+  "dependencies": {
+    "prettier": "^2.7.1"
+  }
+}
