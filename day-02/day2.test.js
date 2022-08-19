@@ -34,11 +34,11 @@ test('it should map', () => {
 //     expect(every([2, 6, 10], (n) => n % 2 === 0)).toBe(true);
 // })
 function rootDigit(n) {
-    if (n < 10) return n;
+    if (n <= 9) return n;
     const digits = n.toString().split('');
     const numbers = digits.map(d => +d);
     const sum = numbers.reduce((a, b) => a + b);
-    return sum >  10 ? rootDigit(sum) : sum;
+    return sum >=  10 ? rootDigit(sum) : sum;
 }
 
 test('rootDigit test', () => {
@@ -87,3 +87,11 @@ test('fibonacci test', () => {
     expect(fib(2)).toEqual(2);
     expect(fib(8)).toEqual(34);
 })
+
+// function largestEven(nums) {
+//     for(let i = nums.length; i > 0; i ++)
+// };
+
+// test('finds largest even number in an array', () => {
+// expect(largestEven[3, 7, 2, 1, 7, 9, 10, 13]).toBe(10)
+// })
